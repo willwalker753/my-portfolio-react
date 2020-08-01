@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "SF Display";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "SF Display";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin-left: 0px;
+  margin-right: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+nav {
+  height: 40px;
+  background-color: rgba(223, 223, 223, 0.815);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  border:none;
+  z-index: 1;
+}
+nav > ul {
+  margin: 0px;
+  list-style-type: none;
+}
+#aboutMe , #contactMe {
+  display: inline;
+  font-size: 20px;
+  margin-top: 6px;
+  font-weight: bold;
+}
+#aboutMe {
+  float: left;
+}
+#aboutMe > li > a {
+  background-color: rgba(223, 223, 223, 0.418);
+}
+#contactMe {
+  float: right;
+  margin-right: 50px;
+}
+header {
+  background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+#headerContainer {
   display: flex;
+  flex-direction: row; 
+  padding-top: 20px;
+  justify-content: space-around;
+  width:80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#headerText  {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  bottom: 30px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#headerText > h2 {
+  font-size: 22px;
+  margin-top: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#headerText > h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+#headerContainer > img {
+  height: 220px;  
+  float: right;
+}
+#icons {
+  display: flex;                 
+  flex-direction: row;            
+  flex-wrap: nowrap;             
+  justify-content: space-between;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#github > a > i, #email > a > i, #linkedin > a > i {
+  font-size:35px;
+  color: rgb(185, 185, 185)
+}
+#linkedin > a > i:hover {
+  color: #0073b1;
+}
+#email > a > i:hover {
+  color: #d93025;
+}
+#github > a > i:hover {
+  color: #24292e;
+}
+#project1, #project2, #project3 {
+  background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+  height: max-content;
+  display: flex;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+#projectText1, #projectText2, #projectText3, #projectImg1, #projectImg2, #projectImg3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#projectText1 > a, #projectText2 > a, #projectText3 > a  {
+  padding-right: 30px;
+  padding-left: 20px;
+}
+#projectImg1, #projectImg2, #projectImg3 {
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  top: 2px;
+}
+#projectImg1 > img, #projectImg2 > img, #projectImg3 > img {
+  width: 100%;
+  min-height: 170px;
+  min-width: 220px;
+  float: none;   
+  border-radius: 0px 0px 10px 10px;
+}
+#projectText1 > h3, #projectText2 > h3, #projectText3 > h3 {
+  font-size: 20px;
+  padding-left: 20px;
+}
+#projectText1 > p, #projectText2 > p, #projectText3 > p {  
+  width:90%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+#aboutMeText , #contactMeText {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contactMeText > p, #aboutMeText > p {
+  width: 80%; 
+  font-size: 18px;
+  padding-left: 20px;
+}
+#contactMeText > h3, #aboutMeText > h3 {
+  padding-left: 20px;
+}
+#contactMeText > p{
+  line-height: 20px;
+}
+html {
+  padding-bottom: 30px;
+}
+header, #project1, #project2, #project3, #aboutMeText, #contactMeText {
+  border-style: solid;
+  border-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  border-width: 1px;
+}
+@media only screen and (min-width: 900px) {
+  #headerContainer > img {
+      height: 500px;  
   }
-  to {
-    transform: rotate(360deg);
+  #headerText > h2 {  
+      font-size: 35px;
   }
+  #headerText > h1 {
+      font-size: 45px;
+  }
+  #project1, #project2, #project3 {
+      flex-direction: row;
+  }  
+  #projectImg1, #projectImg2, #projectImg3 {  
+      float: right;
+      padding-top: 0px;
+      position: initial;
+  }
+  #projectText1, #projectText2, #projectText3 {
+    padding-left: 30px;
+  }
+  #contactMeText > h3, #aboutMeText > h3, #contactMeText > p, #aboutMeText > p {
+    padding-left: 50px;
+  }
+  #projectImg1 > img, #projectImg2 > img, #projectImg3 > img {
+      border-radius: 0px 10px 10px 0px;
+      width:400px;
+      float: right;    
+  }
+  #contactMeText > p, #aboutMeText > p {
+      width: 60%;   
+  }  
 }
