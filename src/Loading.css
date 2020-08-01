@@ -1,0 +1,38 @@
+#loadingBox {
+    width: 100%;
+    height: 100%;
+    padding-top: 250px;
+    text-align: center;
+    background-color: #f8f9fa;
+    z-index: 5;
+    position: absolute;
+    animation: fadeOut 3s;
+}
+#loadingSpinner {
+    border: 16px solid #f8f9fa; /* Light grey */
+    border-top: 16px solid rgb(185, 185, 185); /* Blue */
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(400deg); } 
+    80% { transform: rotate(830deg); } 
+    100% { transform: rotate(980deg); }
+}
+@keyframes fadeOut {
+    0% { opacity: 1; } 
+    66% { opacity: 1; }
+    100% { opacity: 0; }
+}
+#loadingText {
+    color: rgb(185, 185, 185);
+    margin-top: 25px;
+}
+.hidden {
+    display: none;
+}
