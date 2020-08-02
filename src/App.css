@@ -10,6 +10,12 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
+.link:hover {
+  color: rgb(0, 58, 192);
+}
+.link:active {
+  color: rgb(0, 34, 112);
+}
 #bottomFade > img {
   width:100vw;
   height: 40px;
@@ -17,11 +23,16 @@ body {
 	position: fixed;
 	bottom: 0%;
 }
-a {
+.link {
   color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
+}
+.boxLink  {
+  color: black;
+  text-decoration: none;
+  width: 100%;
 }
 nav {
   height: 40px;
@@ -106,12 +117,46 @@ header {
 }
 #linkedin > a > i:hover {
   color: #0073b1;
+  animation: hoverExpand 5s ease-in-out infinite;
+  -webkit-animation: hoverExpand 5s ease-in-out infinite;
 }
 #email > a > i:hover {
   color: #d93025;
+  animation: hoverExpand 5s ease-in-out infinite;
+  -webkit-animation: hoverExpand 5s ease-in-out infinite;
 }
 #github > a > i:hover {
   color: #24292e;
+  animation: hoverExpand 5s ease-in-out infinite;
+  -webkit-animation: hoverExpand 5s ease-in-out infinite;
+}
+i {
+  animation: hoverLeave .5s ease-in-out;
+  -webkit-animation: hoverLeave .5s ease-in-out;
+}
+@keyframes hoverExpand {
+  0% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+  10% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+}
+@keyframes hoverLeave {
+  0% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }
 #project1, #project2, #project3 {
   background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
@@ -123,6 +168,9 @@ header {
   margin-right: auto;
   margin-bottom: 15px;
   flex-direction: column;
+}
+#aboutMeText, #contactMeText {
+  background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
 }
 #projectText1, #projectText2, #projectText3, #projectImg1, #projectImg2, #projectImg3 {
   margin-top: auto;
@@ -136,7 +184,7 @@ header {
   text-align: center;
   padding-top: 10px;
   position: relative;
-  top: 2px;
+  top: 4px;
 }
 #projectImg1 > img, #projectImg2 > img, #projectImg3 > img {
   width: 100%;
@@ -194,6 +242,10 @@ header, #project1, #project2, #project3, #aboutMeText, #contactMeText {
   p, #aboutMeText, #contactMeText {
     font-size: 20px;
   }
+  .boxLink {
+    display:flex;
+    flex-direction: row;
+  }
   #headerContainer > img {
       height: 500px;  
   }
@@ -206,6 +258,9 @@ header, #project1, #project2, #project3, #aboutMeText, #contactMeText {
   #project1, #project2, #project3 {
       flex-direction: row;
   }  
+  #icons {
+    width: 60%;
+  }
   #projectImg1, #projectImg2, #projectImg3 {  
       float: right;
       padding-top: 0px;

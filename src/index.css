@@ -11,3 +11,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(146, 146, 146); 
 }
+html:hover {
+    cursor: url('./icons8-cursor-26.png'), auto;
+}
+a:hover {
+    cursor: url('./icons8-hand-cursor-32.png'), auto;
+}
