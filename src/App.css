@@ -10,6 +10,9 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
+p {
+  line-height: 24px;  
+}
 .link:hover {
   color: rgb(0, 58, 192);
 }
@@ -221,7 +224,7 @@ i {
   padding-left: 20px;
 }
 #contactMeText > p{
-  line-height: 20px;
+  line-height: 28px;
 }
 html {
   padding-bottom: 30px;
