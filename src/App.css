@@ -4,7 +4,10 @@
   src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
 }
 * {
-  font-family: "SF Display";
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   margin-left: 0px;
@@ -19,12 +22,13 @@ p {
 .link:active {
   color: rgb(0, 34, 112);
 }
-#bottomFade > img {
+#bottomFade {
   width:100vw;
   height: 40px;
 	z-index: 2;
 	position: fixed;
-	bottom: 0%;
+  bottom: 0%;
+  background: linear-gradient(rgba(223, 223, 223, 0),rgb(211, 211, 211));
 }
 .link {
   color: black;
@@ -68,11 +72,10 @@ nav > ul {
 }
 header {
   background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
-  width: 98%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 #headerContainer {
   display: flex;
@@ -114,9 +117,9 @@ header {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-#github > a > i, #email > a > i, #linkedin > a > i {
+#github > a > i, #email > a > i, #phone > a > i, #linkedin > a > i {
   font-size:35px;
-  color: rgb(185, 185, 185)
+  color: rgb(153, 153, 153)
 }
 #linkedin > a > i:hover {
   color: #0073b1;
@@ -133,6 +136,11 @@ header {
   animation: hoverExpand 5s ease-in-out infinite;
   -webkit-animation: hoverExpand 5s ease-in-out infinite;
 }
+#phone > a > i:hover {
+  color: #129e00;
+  animation: hoverExpand 5s ease-in-out infinite;
+  -webkit-animation: hoverExpand 5s ease-in-out infinite;
+}
 i {
   animation: hoverLeave .5s ease-in-out;
   -webkit-animation: hoverLeave .5s ease-in-out;
@@ -143,18 +151,18 @@ i {
     -webkit-transform: scale(1.0);
   }
   10% {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
   }
   100% {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
   }
 }
 @keyframes hoverLeave {
   0% {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -162,7 +170,7 @@ i {
   }
 }
 #project1, #project2, #project3 {
-  background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+  background-image: linear-gradient(to right,white,rgb(246, 246, 246),rgb(223, 223, 223));
   height: max-content;
   display: flex;
   border-radius: 10px;
@@ -173,7 +181,7 @@ i {
   flex-direction: column;
 }
 #aboutMeText, #contactMeText {
-  background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+  background-image: linear-gradient(to right,white,rgb(246, 246, 246),rgb(223, 223, 223));
 }
 #projectText1, #projectText2, #projectText3, #projectImg1, #projectImg2, #projectImg3 {
   margin-top: auto;
@@ -203,7 +211,7 @@ i {
 #projectText1 > p, #projectText2 > p, #projectText3 > p {  
   width:90%;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-left: 20px;
 }
 #aboutMeText , #contactMeText {
@@ -229,25 +237,32 @@ i {
 html {
   padding-bottom: 30px;
 }
-header, #project1, #project2, #project3, #aboutMeText, #contactMeText {
-  border-style: solid;
-  border-color: rgb(223, 223, 223);
-  border-radius: 10px;
-  border-width: 1px;
-}
 #appHideBox {
   z-index: 0;
 }
 @media only screen and (min-width: 900px) {
+  header {
+    width: 100%;
+    overflow-x: hidden;
+  }
   h3 {
     font-size: 22px;
+    margin-top: 0px;
   }
   p, #aboutMeText, #contactMeText {
     font-size: 20px;
   }
+  #aboutMeText, #contactMeText {
+    padding: 25px 0px;
+  }
+  #aboutMeText, #contactMeText, #project1, #project2, #project3 {
+    width: 70%;
+  }
   .boxLink {
     display:flex;
     flex-direction: row;
+    color: rgb(204, 204, 204);
+    border-radius: 10px;
   }
   #headerContainer > img {
       height: 500px;  
@@ -261,6 +276,28 @@ header, #project1, #project2, #project3, #aboutMeText, #contactMeText {
   #project1, #project2, #project3 {
       flex-direction: row;
   }  
+  .aniOn {
+    animation: aniOn .5s 1 forwards;
+  }
+  @keyframes aniOn {
+    0% {
+      box-shadow: 0px 0px 0px;
+    }
+    100% {
+      box-shadow: 5px 3px 3px;
+    }
+  }
+  .aniOff {
+    animation: aniOff .5s 1 forwards;
+  }
+  @keyframes aniOff {
+    0% {
+      box-shadow: 5px 3px 3px;
+    }
+    100% {
+      box-shadow: 0px 0px 0px;
+    }
+  }
   #icons {
     width: 60%;
   }
@@ -271,16 +308,21 @@ header, #project1, #project2, #project3, #aboutMeText, #contactMeText {
   }
   #projectText1, #projectText2, #projectText3 {
     padding-left: 30px;
+    color: black;
+  }
+  #projectText1 > h3, #projectText2 > h3, #projectText3 > h3 {
+    font-size: 22px;
   }
   #contactMeText > h3, #aboutMeText > h3, #contactMeText > p, #aboutMeText > p {
     padding-left: 50px;
   }
+  #contactMeText > p, #aboutMeText > p {
+    margin-bottom: 5px;
+  }
   #projectImg1 > img, #projectImg2 > img, #projectImg3 > img {
       border-radius: 0px 10px 10px 0px;
-      width:400px;
+      width: 400px;
+      height: 240px;
       float: right;    
   }
-  #contactMeText > p, #aboutMeText > p {
-      width: 60%;   
-  }  
 }

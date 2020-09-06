@@ -6,7 +6,25 @@ export default class App extends Component {
         setTimeout(() => { 
             let element = document.getElementById("appHideBox");
             element.classList.remove("hidden");
-        }, 2000);   
+        }, 2000);  
+    }
+    boxEnter = e => {
+        try {
+            let target = e.target.id;
+            let id = target.substring(target.length-1, target.length);
+            id = `boxLink${id}`;
+            document.getElementById(id).className='boxLink aniOn';  
+        }
+        catch {return;}
+    }
+    boxLeave = e => {
+        try{
+            let target = e.target.id;
+            let id = target.substring(target.length-1, target.length);
+            id = `boxLink${id}`;
+            document.getElementById(id).className='boxLink aniOff';  
+        }
+        catch{return;}
     }
     render() {
         return (
@@ -33,52 +51,66 @@ export default class App extends Component {
                     <div id="email">
                         <a href="mailto:willwalker@email.com" className="link" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope-square"></i></a>
                     </div>
+                    <div id="phone">
+                        <a href="tel:2542165445" className="link" rel="noopener noreferrer"><i className="fas fa-phone-square-alt"></i></a>
+                    </div>
+                    
                     <div id="linkedin">
                         <a href="https://www.linkedin.com/in/willdev/" className="link" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                     </div>
                 </section>
                 <section id="projects">
                     <div id="project1">
-                        <a href="https://allrecipes-git-master.willwalker753.vercel.app/" className="boxLink" target="_blank" rel="noopener noreferrer">
+                        <a href="https://teratext.vercel.app/" className="boxLink" id="boxLink1" target="_blank" rel="noopener noreferrer" onMouseEnter={this.boxEnter} onMouseLeave={this.boxLeave}>
                             <div id="projectText1">
-                                <h3>allRecipes</h3>
-                                <p>This site enables the user to search from hundreds of thousands of recipes 
-                                    and save their favorites to their account to view later.</p>
-                                <a href="https://github.com/willwalker753/allrecipes" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
-                                <a href="https://allrecipes-git-master.willwalker753.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <h3>Teratext</h3>
+                                <p>
+                                    Teratext is a secure chat app that enables users to connect by messaging 
+                                    with texts and pictures. It has features such as a realtime texting, a profile 
+                                    picture, and automatic login. Built with HTML5, CSS3, JavaScript ES6, React.js, 
+                                    Node.js, Express.js, PostgreSQL, and is hosted using vercel and heroku.
+                                </p>
+                                <a href="https://github.com/willwalker753/teratext" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
+                                <a href="https://teratext.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg1">
-                                <img src="https://i.gyazo.com/5b6fc214c1154b9044de5c4da27a4254.jpg" alt="allRecipes site"/>
+                                <img src="https://i.gyazo.com/700c5cca25e3403f8f479a598ba9b708.png" alt="Placeholder"/>
                             </div>
                         </a>
                     </div>
                     <div id="project2">
-                        <a href="https://willwalker753.github.io/allweather.com/" className="boxLink" target="_blank" rel="noopener noreferrer">
+                        <a href="https://allrecipes-git-master.willwalker753.vercel.app/" className="boxLink" id="boxLink2" target="_blank" rel="noopener noreferrer" onMouseEnter={this.boxEnter} onMouseLeave={this.boxLeave}>
                             <div id="projectText2">
-                                <h3>allWeather</h3>
-                                <p>This site uses multiple APIs to generate weather data for the user. It will
-                                    guess the user's location by default but location can also be manually entered.</p>     
-                                <a href="https://github.com/willwalker753/allweather.com" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
-                                <a href="https://willwalker753.github.io/allweather.com/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>      
+                                <h3>allRecipes</h3>
+                                <p>
+                                    This site enables the user to search from hundreds of thousands of recipes 
+                                    and save their favorites to their account to view later. Made using HTML5, CSS3, JavaScript ES6, React.js, Node.js, Express.js, MongoDB, and is hosted on heroku and vercel.
+                                </p>
+                                <a href="https://github.com/willwalker753/allrecipes" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
+                                <a href="https://allrecipes-git-master.willwalker753.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg2">
-                                <img src="https://i.gyazo.com/26ac4f32b315476ebb233fe12043c8d6.png" alt="allWeather site"/>
+                                <img src="https://i.gyazo.com/5b6fc214c1154b9044de5c4da27a4254.jpg" alt="allRecipes site"/>
                             </div>
                         </a>
                     </div>
                     <div id="project3">
-                        <a href="https://willwalker753.github.io/allweather.com/" className="boxLink" target="_blank" rel="noopener noreferrer">
+                        <a href="https://willwalker753.github.io/allweather.com/" className="boxLink" id="boxLink3" target="_blank" rel="noopener noreferrer" onMouseEnter={this.boxEnter} onMouseLeave={this.boxLeave}>
                             <div id="projectText3">
-                                <h3>Lorem ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                <a href="https://github.com/willwalker753/quiz-app" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
-                                <a href="https://willwalker753.github.io/quiz-app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <h3>allWeather</h3>
+                                <p>
+                                    This site uses multiple APIs to generate weather data for the user. It will
+                                    guess the user's location by default but location can also be manually entered. Built with HTML5, CSS3, JavaScript ES6, jQuery, and is being hosted on github pages.
+                                </p>     
+                                <a href="https://github.com/willwalker753/allweather.com" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
+                                <a href="https://willwalker753.github.io/allweather.com/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>      
                             </div>
                             <div id="projectImg3">
-                                <img src="https://github.com/willwalker753/portfolio2/blob/master/placeholder.jpg?raw=true" alt="Placeholder"/>
+                                <img src="https://i.gyazo.com/26ac4f32b315476ebb233fe12043c8d6.png" alt="allWeather site"/>
                             </div>
                         </a>
                     </div>
+                    
                 </section>
                 <section id="aboutMeText">
                     <h3>About Me</h3>
@@ -96,16 +128,16 @@ export default class App extends Component {
                     <p>
                         Email: <a href="mailto:willwalker@email.com" className="link">willwalker@email.com</a>
                         <br/>Phone: <a href="tel:2542165445" className="link">254-216-5445</a>
-                        <br/><a href="https://github.com/willwalker753" className="link" target="_blank" rel="noopener noreferrer">Github</a>
-                        <br/><a href="https://www.linkedin.com/in/william-walker-8b33441a0/" className="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <br/>Github: <a href="https://github.com/willwalker753" className="link" target="_blank" rel="noopener noreferrer">@willwalker753</a>
+                        <br/>LinkedIn: <a href="https://www.linkedin.com/in/willdev/" className="link" target="_blank" rel="noopener noreferrer">@willdev</a>
                     </p>
                 </section>
-                <div id="bottomFade"><img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/bottom-fade.png?raw=true" alt="styling fade at bottom"/></div>
+                <div id="bottomFade"></div>
                 </div>
                 
             </div>
         );
     }
 }
-  
+//<img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/bottom-fade.png?raw=true" alt="styling fade at bottom"/>
 
