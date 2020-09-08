@@ -68,13 +68,13 @@ export default class App extends Component {
                                     Teratext is a secure chat app that enables users to connect by messaging 
                                     with texts and pictures. It has features such as a realtime texting, a profile 
                                     picture, and automatic login. Built with HTML5, CSS3, JavaScript ES6, React.js, 
-                                    Node.js, Express.js, PostgreSQL, and is hosted using vercel and heroku.
+                                    Node.js, Express.js, PostgreSQL, and is hosted using Vercel and Heroku.
                                 </p>
                                 <a href="https://github.com/willwalker753/teratext" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
                                 <a href="https://teratext.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg1">
-                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-teratext.png?raw=true" alt="Placeholder"/>
+                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-teratext.png?raw=true" alt="Teratext"/>
                             </div>
                         </a>
                     </div>
@@ -84,13 +84,13 @@ export default class App extends Component {
                                 <h3>allRecipes</h3>
                                 <p>
                                     This site enables the user to search from hundreds of thousands of recipes 
-                                    and save their favorites to their account to view later. Made using HTML5, CSS3, JavaScript ES6, React.js, Node.js, Express.js, MongoDB, and is hosted on heroku and vercel.
+                                    and save their favorites to their account to view later. Made using HTML5, CSS3, JavaScript ES6, React.js, Node.js, Express.js, MongoDB, and is hosted on Heroku and Vercel.
                                 </p>
                                 <a href="https://github.com/willwalker753/allrecipes" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
                                 <a href="https://allrecipes-git-master.willwalker753.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg2">
-                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-allrecipes.jpg?raw=true" alt="allRecipes site"/>
+                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-allrecipes.jpg?raw=true" alt="allRecipes"/>
                             </div>
                         </a>
                     </div>
@@ -100,13 +100,13 @@ export default class App extends Component {
                                 <h3>allWeather</h3>
                                 <p>
                                     This site uses multiple APIs to generate weather data for the user. It will
-                                    guess the user's location by default but location can also be manually entered. Built with HTML5, CSS3, JavaScript ES6, jQuery, and is being hosted on github pages.
+                                    guess the user's location by default but location can also be manually entered. Built with HTML5, CSS3, JavaScript ES6, jQuery, and is being hosted on Github Pages.
                                 </p>     
                                 <a href="https://github.com/willwalker753/allweather.com" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
                                 <a href="https://willwalker753.github.io/allweather.com/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>      
                             </div>
                             <div id="projectImg3">
-                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-allweather.png?raw=true" alt="allWeather site"/>
+                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-allweather.png?raw=true" alt="allWeather"/>
                             </div>
                         </a>
                     </div>
@@ -139,5 +139,4 @@ export default class App extends Component {
         );
     }
 }
-//<img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/bottom-fade.png?raw=true" alt="styling fade at bottom"/>
 
