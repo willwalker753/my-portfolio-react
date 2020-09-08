@@ -46,17 +46,17 @@ export default class App extends Component {
                 </header>
                 <section id="icons">
                     <div id="github">
-                        <a href="https://github.com/willwalker753" className="link" target="_blank" samesite="none" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
+                        <a href="https://github.com/willwalker753" className="link" target="_blank" samesite="none" rel="noopener noreferrer"><i title="my github" className="fab fa-github-square"></i></a>
                     </div>
                     <div id="email">
-                        <a href="mailto:willwalker@email.com" className="link" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope-square"></i></a>
+                        <a href="mailto:willwalker@email.com" className="link" target="_blank" rel="noopener noreferrer"><i title="my email" className="fas fa-envelope-square"></i></a>
                     </div>
                     <div id="phone">
-                        <a href="tel:2542165445" className="link" rel="noopener noreferrer"><i className="fas fa-phone-square-alt"></i></a>
+                        <a href="tel:2542165445" className="link" rel="noopener noreferrer"><i title="my phone" className="fas fa-phone-square-alt"></i></a>
                     </div>
                     
                     <div id="linkedin">
-                        <a href="https://www.linkedin.com/in/willdev/" className="link" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/willdev/" className="link" target="_blank" rel="noopener noreferrer"><i title="my linkedin"className="fab fa-linkedin"></i></a>
                     </div>
                 </section>
                 <section id="projects">
@@ -74,7 +74,7 @@ export default class App extends Component {
                                 <a href="https://teratext.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg1">
-                                <img src="https://i.gyazo.com/700c5cca25e3403f8f479a598ba9b708.png" alt="Placeholder"/>
+                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-teratext.png?raw=true" alt="Placeholder"/>
                             </div>
                         </a>
                     </div>
@@ -90,7 +90,7 @@ export default class App extends Component {
                                 <a href="https://allrecipes-git-master.willwalker753.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg2">
-                                <img src="https://i.gyazo.com/5b6fc214c1154b9044de5c4da27a4254.jpg" alt="allRecipes site"/>
+                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-allrecipes.jpg?raw=true" alt="allRecipes site"/>
                             </div>
                         </a>
                     </div>
@@ -106,7 +106,7 @@ export default class App extends Component {
                                 <a href="https://willwalker753.github.io/allweather.com/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>      
                             </div>
                             <div id="projectImg3">
-                                <img src="https://i.gyazo.com/26ac4f32b315476ebb233fe12043c8d6.png" alt="allWeather site"/>
+                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-allweather.png?raw=true" alt="allWeather site"/>
                             </div>
                         </a>
                     </div>
