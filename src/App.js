@@ -74,7 +74,24 @@ export default class App extends Component {
                                 <a href="https://teratext.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
                             </div>
                             <div id="projectImg1">
-                                <img src="https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-teratext.png?raw=true" alt="Teratext"/>
+                                <img src="https://github.com/willwalker753/teratext/blob/master/public/teratext-meta.jpg?raw=true" alt="Teratext"/>
+                                {/* alt image https://github.com/willwalker753/organizing-your-react-code/blob/master/portfolio-teratext.png?raw=true" alt="Teratext */}
+                            </div>
+                        </a>
+                    </div>
+                    <div id="project4">
+                        <a href="https://amazon-copy-cat.vercel.app/" className="boxLink" id="boxLink4" target="_blank" rel="noopener noreferrer" onMouseEnter={this.boxEnter} onMouseLeave={this.boxLeave}>
+                            <div id="projectText4">
+                                <h3>Amazon Look-Alike</h3>
+                                <p>
+                                    This is a built from scratch look-alike of Amazon.com. It is designed to display 
+                                    the desktop home page on a standard 1080p monitor. Only built using HTML5 and vanilla CSS3.
+                                </p>
+                                <a href="https://github.com/willwalker753/amazon-look-alike" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
+                                <a href="https://amazon-copy-cat.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                            <div id="projectImg4">
+                                <img src="https://github.com/willwalker753/amazon-look-alike/raw/master/pictures/amazon-logo-meta.jpg?raw=true" alt="amazon look-alike"/>
                             </div>
                         </a>
                     </div>
@@ -134,7 +151,6 @@ export default class App extends Component {
                 </section>
                 <div id="bottomFade"></div>
                 </div>
-                
             </div>
         );
     }
