@@ -49,7 +49,7 @@ export default class App extends Component {
                         <a href="https://github.com/willwalker753" className="link" target="_blank" samesite="none" rel="noopener noreferrer"><i title="my github" className="fab fa-github-square"></i></a>
                     </div>
                     <div id="email">
-                        <a href="mailto:willwalker@email.com" className="link" target="_blank" rel="noopener noreferrer"><i title="my email" className="fas fa-envelope-square"></i></a>
+                        <a href="mailto:willwalkerdev@gmail.com" className="link" target="_blank" rel="noopener noreferrer"><i title="my email" className="fas fa-envelope-square"></i></a>
                     </div>
                     <div id="phone">
                         <a href="tel:2542165445" className="link" rel="noopener noreferrer"><i title="my phone" className="fas fa-phone-square-alt"></i></a>
@@ -143,7 +143,7 @@ export default class App extends Component {
                 <section id="contactMeText">
                     <h3>Contact Me</h3>
                     <p>
-                        Email: <a href="mailto:will@null.net" className="link">will@null.net</a>
+                        Email: <a href="mailto:willwalkerdev@gmail.com" className="link">willwalkerdev@gmail.com</a>
                         <br/>Phone: <a href="tel:2542165445" className="link">254-216-5445</a>
                         <br/>Github: <a href="https://github.com/willwalker753" className="link" target="_blank" rel="noopener noreferrer">@willwalker753</a>
                         <br/>LinkedIn: <a href="https://www.linkedin.com/in/willdev/" className="link" target="_blank" rel="noopener noreferrer">@willdev</a>
