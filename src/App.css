@@ -169,7 +169,7 @@ i {
     -webkit-transform: scale(1);
   }
 }
-#project1, #project2, #project3, #project4 {
+#project1, #project2, #project3, #project4, #project5 {
   background-image: linear-gradient(to right,white,rgb(246, 246, 246),rgb(223, 223, 223));
   height: max-content;
   display: flex;
@@ -183,32 +183,32 @@ i {
 #aboutMeText, #contactMeText {
   background-image: linear-gradient(to right,white,rgb(246, 246, 246),rgb(223, 223, 223));
 }
-#projectText1, #projectText2, #projectText3, #projectText4, #projectImg1, #projectImg2, #projectImg3, #projectImg4 {
+#projectText1, #projectText2, #projectText3, #projectText4, #projectText5 , #projectImg1, #projectImg2, #projectImg3, #projectImg4, #projectImg5 {
   margin-top: auto;
   margin-bottom: auto;
 }
-#projectText1 > a, #projectText2 > a, #projectText3 > a, #projectText4 > a {
+#projectText1 > a, #projectText2 > a, #projectText3 > a, #projectText4 > a, #projectText5 > a {
   padding-right: 30px;
   padding-left: 20px;
 }
-#projectImg1, #projectImg2, #projectImg3, #projectImg4 {
+#projectImg1, #projectImg2, #projectImg3, #projectImg4, #projectImg5 {
   text-align: center;
   padding-top: 10px;
   position: relative;
   top: 4px;
 }
-#projectImg1 > img, #projectImg2 > img, #projectImg3 > img, #projectImg4 > img {
+#projectImg1 > img, #projectImg2 > img, #projectImg3 > img, #projectImg4 > img, #projectImg5 > img {
   width: 100%;
   min-height: 170px;
   min-width: 220px;
   float: none;   
   border-radius: 0px 0px 10px 10px;
 }
-#projectText1 > h3, #projectText2 > h3, #projectText3 > h3, #projectText4 > h3 {
+#projectText1 > h3, #projectText2 > h3, #projectText3 > h3, #projectText4 > h3, #projectText5 > h3 {
   font-size: 20px;
   padding-left: 20px;
 }
-#projectText1 > p, #projectText2 > p, #projectText3 > p, #projectText4 > p {  
+#projectText1 > p, #projectText2 > p, #projectText3 > p, #projectText4 > p, #projectText5 > p {  
   width:90%;
   font-size: 18px;
   margin-bottom: 15px;
@@ -255,7 +255,7 @@ html {
   #aboutMeText, #contactMeText {
     padding: 25px 0px;
   }
-  #aboutMeText, #contactMeText, #project1, #project2, #project3, #project4 {
+  #aboutMeText, #contactMeText, #project1, #project2, #project3, #project4, #project5 {
     width: 70%;
   }
   .boxLink {
@@ -273,7 +273,7 @@ html {
   #headerText > h1 {
       font-size: 45px;
   }
-  #project1, #project2, #project3, #project4 {
+  #project1, #project2, #project3, #project4, #project5 {
       flex-direction: row;
   }  
   .aniOn {
@@ -301,16 +301,16 @@ html {
   #icons {
     width: 60%;
   }
-  #projectImg1, #projectImg2, #projectImg3, #projectImg4 {  
+  #projectImg1, #projectImg2, #projectImg3, #projectImg4, #projectImg5 {  
       float: right;
       padding-top: 0px;
       position: initial;
   }
-  #projectText1, #projectText2, #projectText3, #projectText4 {
+  #projectText1, #projectText2, #projectText3, #projectText4, #projectText5 {
     padding-left: 30px;
     color: black;
   }
-  #projectText1 > h3, #projectText2 > h3, #projectText3 > h3 {
+  #projectText1 > h3, #projectText2 > h3, #projectText3 > h3, #projectText4 > h3, #projectText5 > h3 {
     font-size: 22px;
   }
   #contactMeText > h3, #aboutMeText > h3, #contactMeText > p, #aboutMeText > p {
@@ -319,7 +319,7 @@ html {
   #contactMeText > p, #aboutMeText > p {
     margin-bottom: 5px;
   }
-  #projectImg1 > img, #projectImg2 > img, #projectImg3 > img, #projectImg4 > img {
+  #projectImg1 > img, #projectImg2 > img, #projectImg3 > img, #projectImg4 > img, #projectImg5 > img {
       border-radius: 0px 10px 10px 0px;
       width: 400px;
       height: 240px;
