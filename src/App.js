@@ -32,6 +32,7 @@ export default class App extends Component {
                 <Loading />
                 <div id='appHideBox' className='hidden'>
                 <nav>
+                    <p>Will Walker</p>
                     <ul>
                         <li><div id="aboutMe"><a className="link" href="#aboutMeText">About me</a></div></li>
                         <li><div id="contactMe"><a className="link" href="#contactMeText">Contact me</a></div></li>
