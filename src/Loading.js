@@ -17,7 +17,7 @@ export default class Loading extends Component {
                 loadingText: currentText
             });
             this.addDot2();
-        }, 400);  
+        }, 500);  
     };
     addDot2 = () => {
         let currentText = this.state.loadingText;
@@ -27,7 +27,7 @@ export default class Loading extends Component {
                 loadingText: currentText
             });
             this.addDot();
-        }, 400);  
+        }, 500);  
     };
     componentDidMount() {
         this.addDot();

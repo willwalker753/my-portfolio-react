@@ -6,7 +6,7 @@ export default class App extends Component {
         setTimeout(() => { 
             let element = document.getElementById("appHideBox");
             element.classList.remove("hidden");
-        }, 2000);  
+        }, 2000);  //2000
     }
     boxEnter = e => {
         try {

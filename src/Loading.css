@@ -3,14 +3,14 @@
     height: 100%;
     padding-top: 250px;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #F1FAEE;
     z-index: 5;
     position: absolute;
     animation: fadeOut 3s;
 }
 #loadingSpinner {
-    border: 16px solid #f8f9fa; /* Light grey */
-    border-top: 16px solid rgb(185, 185, 185); /* Blue */
+    border: 16px solid #F1FAEE; /* Light grey */
+    border-top: 16px solid rgb(168, 218, 220); /* Blue */
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +30,7 @@
     100% { opacity: 0; }
 }
 #loadingText {
-    color: rgb(185, 185, 185);
+    color: rgb(69, 123, 157);
     margin-top: 25px;
 }
 .hidden {
