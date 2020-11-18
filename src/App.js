@@ -33,7 +33,7 @@ export default class App extends Component {
                 <div id='appHideBox' className='hidden'>
                 <nav>
                     <div>
-                        <img src='./woven-circle.png' alt='logo'></img>
+                        <img src='https://github.com/willwalker753/my-portfolio-react/blob/master/src/woven-circle.png?raw=true' alt='logo'></img>
                         <p>Will Walker</p>
                     </div>
                     

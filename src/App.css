@@ -54,10 +54,19 @@ nav {
   align-items: center;
   padding: 0px 0px 0px 15px;
 }
-nav > p {
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > div > p {
   font-weight: bold;
   font-size: 17px;
   color: #E63946;
+}
+nav > div > img {
+  height: 20px;
+  margin-right: 8px;
 }
 nav > ul {
   margin: 0px;
@@ -252,7 +261,7 @@ html {
   z-index: 0;
 }
 @media only screen and (min-width: 900px) {
-  nav > p, #aboutMe > a, #contactMe > a{
+  nav > div > p, #aboutMe > a, #contactMe > a{
     font-size: 19px;  
   }
   nav > ul {
