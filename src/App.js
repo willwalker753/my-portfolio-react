@@ -10,19 +10,19 @@ export default class App extends Component {
     }
     boxEnter = e => {
         try {
-            let target = e.target.id;
-            let id = target.substring(target.length-1, target.length);
-            id = `boxLink${id}`;
-            document.getElementById(id).className='boxLink aniOn';  
+            // let target = e.target.id;
+            // let id = target.substring(target.length-1, target.length);
+            // id = `boxLink${id}`;
+            // document.getElementById(id).className='boxLink aniOn';  
         }
         catch {return;}
     }
     boxLeave = e => {
         try{
-            let target = e.target.id;
-            let id = target.substring(target.length-1, target.length);
-            id = `boxLink${id}`;
-            document.getElementById(id).className='boxLink aniOff';  
+            // let target = e.target.id;
+            // let id = target.substring(target.length-1, target.length);
+            // id = `boxLink${id}`;
+            // document.getElementById(id).className='boxLink aniOff';  
         }
         catch{return;}
     }
@@ -32,7 +32,11 @@ export default class App extends Component {
                 <Loading />
                 <div id='appHideBox' className='hidden'>
                 <nav>
-                    <p>Will Walker</p>
+                    <div>
+                        <img src='./woven-circle.png' alt='logo'></img>
+                        <p>Will Walker</p>
+                    </div>
+                    
                     <ul>
                         <li><div id="aboutMe"><a className="link" href="#aboutMeText">About me</a></div></li>
                         <li><div id="contactMe"><a className="link" href="#contactMeText">Contact me</a></div></li>
