@@ -8,6 +8,10 @@
 }
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+  
+}
+h3 {
+  font-family: 'Alegreya', serif;
 }
 body {
   margin-left: 0px;
@@ -63,6 +67,7 @@ nav > div > p {
   font-weight: bold;
   font-size: 17px;
   color: #E63946;
+  font-family: 'Alegreya', serif;
 }
 nav > div > img {
   height: 20px;
@@ -72,6 +77,8 @@ nav > ul {
   margin: 0px;
   list-style-type: none;
   display: flex;
+  position: relative;
+  bottom: 3px;
 }
 #aboutMe , #contactMe {
   display: inline;
@@ -117,10 +124,12 @@ header {
 #headerText > h2 {
   font-size: 22px;
   margin-top: 0px;
+  color: #1d3557;
 }
 #headerText > h1 {
   font-size: 32px;
   margin-bottom: 5px;
+  color: #1d3557;
 }
 #headerContainer > img {
   height: 220px;  
@@ -189,6 +198,9 @@ i {
     -webkit-transform: scale(1);
   }
 }
+h3 {
+  color: #e63946;
+}
 #project1, #project2, #project3, #project4, #project5 {
   background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(168, 218, 220));
   height: max-content;
@@ -225,7 +237,7 @@ i {
   border-radius: 0px 0px 10px 10px;
 }
 #projectText1 > h3, #projectText2 > h3, #projectText3 > h3, #projectText4 > h3, #projectText5 > h3 {
-  font-size: 20px;
+  font-size: 21px;
   padding-left: 20px;
 }
 #projectText1 > p, #projectText2 > p, #projectText3 > p, #projectText4 > p, #projectText5 > p {  
@@ -247,9 +259,11 @@ i {
   width: 80%; 
   font-size: 18px;
   padding-left: 20px;
+  color: #1d3557;
 }
 #contactMeText > h3, #aboutMeText > h3 {
   padding-left: 20px;
+  font-size: 21px;
 }
 #contactMeText > p{
   line-height: 28px;
@@ -261,17 +275,23 @@ html {
   z-index: 0;
 }
 @media only screen and (min-width: 900px) {
-  nav > div > p, #aboutMe > a, #contactMe > a{
+  nav > div > p {
     font-size: 19px;  
+  }
+  #aboutMe > a, #contactMe > a {
+    font-size: 18px;  
   }
   nav > ul {
     position: relative;
-    bottom : 3px;
+    bottom : 2px;
   }
   header {
     width: 100%;
     overflow-x: hidden;
     color: #1d3557
+  }
+  #project1, #project2, #project3, #project4, #project5 {
+    background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,#F1FAEE,rgb(168, 218, 220), rgb(168, 218, 220));
   }
   h3 {
     font-size: 22px;
