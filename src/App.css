@@ -47,7 +47,7 @@ p {
 }
 nav {
   height: 40px;
-  background-color: rgba(241, 250, 238, 0.815);
+  background-color: rgba(241, 250, 238, 0.842);
   width: 100%;
   top: 0;
   position: fixed;
@@ -98,7 +98,7 @@ nav > ul {
   margin-right: 25px;
 }
 header {
-  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(168, 218, 220));
+  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(57, 135, 224));
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -124,12 +124,12 @@ header {
 #headerText > h2 {
   font-size: 22px;
   margin-top: 0px;
-  color: #1d3557;
+  color: black;
 }
 #headerText > h1 {
   font-size: 32px;
   margin-bottom: 5px;
-  color: #1d3557;
+  color: black;
 }
 #headerContainer > img {
   height: 220px;  
@@ -148,7 +148,7 @@ header {
 }
 #github > a > i, #email > a > i, #phone > a > i, #linkedin > a > i {
   font-size:35px;
-  color: #457B9D;
+  color: #1b5980;
 }
 #linkedin > a > i:hover {
   color: #0073b1;
@@ -199,10 +199,10 @@ i {
   }
 }
 h3 {
-  color: #e63946;
+  color: #1d3557;
 }
 #project1, #project2, #project3, #project4, #project5 {
-  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(168, 218, 220));
+  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(57, 135, 224));
   height: max-content;
   display: flex;
   border-radius: 10px; 
@@ -213,7 +213,7 @@ h3 {
   flex-direction: column;
 }
 #aboutMeText, #contactMeText {
-  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(168, 218, 220));
+  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(57, 135, 224));
 }
 #projectText1, #projectText2, #projectText3, #projectText4, #projectText5 , #projectImg1, #projectImg2, #projectImg3, #projectImg4, #projectImg5 {
   margin-top: auto;
@@ -285,18 +285,22 @@ html {
     position: relative;
     bottom : 2px;
   }
+  #headerContainer {
+    padding-top: 40px;
+  }
   header {
     width: 100%;
+    background-image: linear-gradient(to right,rgb(57, 135, 224),#F1FAEE,#F1FAEE,rgb(57, 135, 224));  
     overflow-x: hidden;
     color: #1d3557
   }
   #project1, #project2, #project3, #project4, #project5 {
-    background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,#F1FAEE,rgb(168, 218, 220), rgb(168, 218, 220));
+    background-image: linear-gradient(to right,#F1FAEE,#F1FAEE, rgb(57, 135, 224));
   }
   h3 {
     font-size: 22px;
     margin-top: 0px;
-    color: #e63946;
+    color: #1d3557;
   }
   p, #aboutMeText, #contactMeText {
     font-size: 20px;
