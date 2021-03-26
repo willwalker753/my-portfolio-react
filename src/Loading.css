@@ -3,14 +3,14 @@
     height: 100%;
     padding-top: 250px;
     text-align: center;
-    background-color: #F1FAEE;
+    background-color: rgb(39, 39, 39);
     z-index: 5;
     position: absolute;
     animation: fadeOut 3s;
 }
 #loadingSpinner {
-    border: 16px solid #F1FAEE; /* Light grey */
-    border-top: 16px solid rgb(65, 124, 192); /* Blue */
+    border: 16px solid rgb(39, 39, 39);
+    border-top: 16px solid rgb(11, 82, 163);
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +30,7 @@
     100% { opacity: 0; }
 }
 #loadingText {
-    color: rgb(32, 72, 117);
+    color: white;
     margin-top: 25px;
 }
 .hidden {

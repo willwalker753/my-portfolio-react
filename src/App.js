@@ -6,7 +6,7 @@ export default class App extends Component {
         setTimeout(() => { 
             let element = document.getElementById("appHideBox");
             element.classList.remove("hidden");
-        }, 2000);  //2000
+        }, 1800);
     }
     boxEnter = e => {
         try {
@@ -44,7 +44,10 @@ export default class App extends Component {
                 </nav>
                 <header>
                     <div id="headerContainer">
-                        <div id="headerText"><h1>Hi, I'm Will</h1><h2>and fullstack<br/>development<br/>is my thing</h2></div>
+                        <div id="headerText">
+                            <h1><span className="htmlTag">&lt;h1&gt;</span>Hi, I'm Will<span className="htmlTag">&lt;/h1&gt;</span></h1>
+                            <h2><span className="htmlTag">&lt;h2&gt;</span>and web development<br/>is my thing<span className="htmlTag">&lt;/h2&gt;</span></h2>
+                        </div>
                     
                         <img src="https://github.com/willwalker753/portfolio2/blob/master/myPicture.png?raw=true" alt="Will"/>
                     </div>
@@ -73,7 +76,7 @@ export default class App extends Component {
                                     Teratext is a secure chat app that enables users to connect by messaging 
                                     with texts and pictures. It has features such as a realtime texting, a profile 
                                     picture, and automatic login. Built with HTML5, CSS3, JavaScript ES6, React.js, 
-                                    Node.js, Express.js, PostgreSQL, and is hosted using Vercel and Heroku.
+                                    Node.js, Express.js, and PostgreSQL.
                                 </p>
                                 <a href="https://github.com/willwalker753/teratext" className="link" target="_blank" samesite="none" rel="noopener noreferrer">Github Repo</a>
                                 <a href="https://teratext.vercel.app/" className="link" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -154,11 +157,12 @@ export default class App extends Component {
                     <h3>About Me</h3>
                     <p>
                         From a young age I’ve learned about computers. I enjoy anything related to 
-                        them from hardware to programming. When I discovered programming in high school it 
-                        became my passion. I'm excited to work on a team of great programmers
-                        to continue learning with. I recently graduated from Thinkful’s Full Stack Web Development 
-                        course. Outside of computers you can find me playing disc golf, building backyard experiments, 
-                        or learning about new technologies.  
+                        them from hardware to programming. My current job at iCompaas has given me lots of hands on experience. 
+                        I've been able to further develop my hard and soft skills with a great team of developers.
+                        I graduated from Thinkful’s Full Stack Web Development course. The course covered front and 
+                        back end web development and provided mentorship from senior level developers.
+                        Outside of computers you can find me playing pool or disc golfing.
+                          
                     </p>
                 </section>
                 <section id="contactMeText">

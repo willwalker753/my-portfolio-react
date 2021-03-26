@@ -7,24 +7,25 @@
   font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   
 }
 h3 {
-  font-family: 'Alegreya', serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   margin-left: 0px;
   margin-right: 0px;
 }
 p {
-  line-height: 24px;  
+  line-height: 24px; 
+  font-family: 'Open Sans', sans-serif;
 }
 .link:hover {
-  color: #e63946;
+  color: #4582d6;
 }
 .link:active {
-  color: #e63946;
+  color: #4582d6;
 }
 #bottomFade {
   width:100vw;
@@ -32,13 +33,12 @@ p {
 	z-index: 2;
 	position: fixed;
   bottom: 0%;
-  background: linear-gradient(rgba(223, 223, 223, 0),rgb(241, 250, 238));
+  background: linear-gradient(rgba(223, 223, 223, 0),rgb(39, 39, 39));
 }
 .link {
-  color: #1d3557;
   text-decoration: none;
-  font-weight: bold;
   font-size: 16px;
+  color:rgb(204, 204, 204)
 }
 .boxLink  {
   color: #1d3557;
@@ -47,7 +47,7 @@ p {
 }
 nav {
   height: 40px;
-  background-color: rgba(241, 250, 238, 0.842);
+  background-color: rgba(39, 39, 39, 0.842);
   width: 100%;
   top: 0;
   position: fixed;
@@ -64,14 +64,14 @@ nav > div {
   align-items: center;
 }
 nav > div > p {
-  font-weight: bold;
-  font-size: 17px;
-  color: #E63946;
-  font-family: 'Alegreya', serif;
+  color: white;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 nav > div > img {
   height: 20px;
   margin-right: 8px;
+  display: none;
 }
 nav > ul {
   margin: 0px;
@@ -84,7 +84,7 @@ nav > ul {
   display: inline;
   font-size: 20px;
   margin-top: 0px;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 #aboutMe {
   float: left;
@@ -98,7 +98,7 @@ nav > ul {
   margin-right: 25px;
 }
 header {
-  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(57, 135, 224));
+  background-image: linear-gradient(to right,rgb(39, 39, 39),rgb(11, 82, 163),rgb(11, 82, 163),rgb(39, 39, 39));
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -120,16 +120,19 @@ header {
   position: relative;
   bottom: 30px;
   flex-direction: column;
+  color: white;
 }
 #headerText > h2 {
   font-size: 22px;
   margin-top: 0px;
-  color: black;
 }
 #headerText > h1 {
   font-size: 32px;
   margin-bottom: 5px;
-  color: black;
+}
+.htmlTag {
+  color:rgba(223, 223, 223, 0.418);
+  display: none;
 }
 #headerContainer > img {
   height: 220px;  
@@ -148,7 +151,7 @@ header {
 }
 #github > a > i, #email > a > i, #phone > a > i, #linkedin > a > i {
   font-size:35px;
-  color: #1b5980;
+  color: rgb(11, 82, 163);
 }
 #linkedin > a > i:hover {
   color: #0073b1;
@@ -161,7 +164,7 @@ header {
   -webkit-animation: hoverExpand 5s ease-in-out infinite;
 }
 #github > a > i:hover {
-  color: #24292e;
+  color: #9da1a5;
   animation: hoverExpand 5s ease-in-out infinite;
   -webkit-animation: hoverExpand 5s ease-in-out infinite;
 }
@@ -199,10 +202,10 @@ i {
   }
 }
 h3 {
-  color: #1d3557;
+  color: white;
 }
 #project1, #project2, #project3, #project4, #project5 {
-  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(57, 135, 224));
+  background-image: linear-gradient(to right,rgb(39, 39, 39),rgb(11, 82, 163),rgb(11, 82, 163));
   height: max-content;
   display: flex;
   border-radius: 10px; 
@@ -213,7 +216,7 @@ h3 {
   flex-direction: column;
 }
 #aboutMeText, #contactMeText {
-  background-image: linear-gradient(to right,#F1FAEE,#F1FAEE,rgb(57, 135, 224));
+  background-image: linear-gradient(to right,rgb(39, 39, 39),rgb(11, 82, 163),rgb(11, 82, 163));
 }
 #projectText1, #projectText2, #projectText3, #projectText4, #projectText5 , #projectImg1, #projectImg2, #projectImg3, #projectImg4, #projectImg5 {
   margin-top: auto;
@@ -245,6 +248,7 @@ h3 {
   font-size: 18px;
   margin-bottom: 15px;
   padding-left: 20px;
+  color: white;
 }
 #aboutMeText , #contactMeText {
   padding-top: 15px;
@@ -259,11 +263,12 @@ h3 {
   width: 80%; 
   font-size: 18px;
   padding-left: 20px;
-  color: #1d3557;
+  color: white;
 }
 #contactMeText > h3, #aboutMeText > h3 {
   padding-left: 20px;
   font-size: 21px;
+  color: white;
 }
 #contactMeText > p{
   line-height: 28px;
@@ -276,10 +281,11 @@ html {
 }
 @media only screen and (min-width: 900px) {
   nav > div > p {
-    font-size: 21px;  
+    font-size: 18px;  
   }
   #aboutMe > a, #contactMe > a {
-    font-size: 18px;  
+    font-size: 18px;
+    color: white;  
   }
   nav > ul {
     position: relative;
@@ -290,21 +296,24 @@ html {
   }
   header {
     width: 100%;
-    background-image: linear-gradient(to right,rgb(57, 135, 224),#F1FAEE,#F1FAEE,rgb(57, 135, 224));  
+    background-image: linear-gradient(to right,rgb(39, 39, 39),rgb(11, 82, 163),rgb(11, 82, 163),rgb(39, 39, 39));  
     overflow-x: hidden;
-    color: #1d3557
+    color: white
+  }
+  .htmlTag {
+    display: inline-block;
   }
   #project1, #project2, #project3, #project4, #project5 {
-    background-image: linear-gradient(to right,#F1FAEE,#F1FAEE, rgb(57, 135, 224));
+    background-image: linear-gradient(to right,rgb(39, 39, 39),rgb(11, 82, 163),rgb(11, 82, 163));
   }
   h3 {
     font-size: 22px;
     margin-top: 0px;
-    color: #1d3557;
+    color: white;
   }
   p, #aboutMeText, #contactMeText {
     font-size: 20px;
-    color: #1d3557;
+    color: white;
   }
   #aboutMeText, #contactMeText {
     padding: 25px 0px;
