@@ -11,7 +11,7 @@ export default class App extends Component {
             element.classList.remove("hidden");
         }, 1800);
         if(isProd() === true) {
-            axios.post("https://view-notify.herokuapp.com/", { name: "Portfolio" });
+            axios.post("https://view-notify.herokuapp.com/email", { name: "Portfolio" });
         }
     }
     boxEnter = e => {
