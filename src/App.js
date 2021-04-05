@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
 import Loading from './Loading';
+import isProd from './isProd';
+
 export default class App extends Component { 
     componentDidMount() {
         setTimeout(() => { 
             let element = document.getElementById("appHideBox");
             element.classList.remove("hidden");
         }, 1800);
+        if(isProd() === true) {
+            axios.post("https://view-notify.herokuapp.com/", { name: "Portfolio" });
+        }
     }
     boxEnter = e => {
         try {
